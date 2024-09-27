@@ -1,0 +1,17 @@
+- name: installation of nginx using variable
+  hosts: webservers
+  become: true
+  vars:
+    softwarename: nginx
+  tasks:
+  - name: installing nginx
+    apt: 
+      name: "{{softwarename}}"
+      state: present
+
+  - name: checking for nginx service
+    service:
+      name: "{{softwarename}}"
+      state: started
+      enabled: yes
+      
