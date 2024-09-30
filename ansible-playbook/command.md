@@ -7,6 +7,9 @@ ansible-playbook -i inventory startnginx.yaml
 sudo systemctl status nginx
 curl localhost nginx
 
+## TO RUN ANSIBLE PLAYBOOK ON CONTROLLER
+ansible-playbook -i inventory name of file to run
+
 ## STOP the service
 ansible-playbook -i inventory stopnginx.yaml
 
