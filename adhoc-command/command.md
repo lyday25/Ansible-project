@@ -36,7 +36,7 @@ ansible --version
 ssh-keygen
 cd .ssh
 ls
-## cat the keys and note the public key, you will drop the pub in other target machines. Then go to target machine1
+## cat the keys and note the public key, you will drop the public key in other target machines. Then go to target machine1
 cd .ssh
 ls
 ## copy authorised_key and vi. Then copy the ansible controller public key under it and save

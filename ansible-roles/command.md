@@ -1,6 +1,7 @@
 ### ANSIBLE ROLES
 
-Ansible roles are a way to organize and structure your Ansible automation code in a modular and reusable fashion. They provide a means of encapsulating tasks, variables, and handlers into a directory structure that can be easily shared and reused across different playbooks and projects. Roles promote code readability, maintainability, and scalability by breaking down complex automation tasks into smaller, manageable components.
+Ansible roles are a way to organize and structure your Ansible automation code in a modular and reusable fashion. 
+They provide a means of encapsulating tasks, variables, and handlers into a directory structure that can be easily shared and reused across different playbooks and projects. Roles promote code readability, maintainability, and scalability by breaking down complex automation tasks into smaller, manageable components.
 
 Key components of an Ansible role include:
 
@@ -97,7 +98,10 @@ After running the above command, you’ll have a basic directory structure for y
 Let’s create a simple Ansible role to install and configure the Apache web server on a CentOS or Red Hat machine.
 
 
-## Create the role structure:
+## Create the apache role structure:
 ansible-galaxy init apache_role
+
+## Create the jenkins role structure:
+ansible-galaxy init jenkins_role
 
 
